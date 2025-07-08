@@ -1,0 +1,414 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+html,
+body {
+    height: auto;
+    width: 100vw;
+}
+
+header {
+    position: sticky;
+    top: 10px;
+    margin: 10px 26px 0px 26px;
+    background: linear-gradient(90deg, rgba(255, 230, 235, 1) 0%, rgba(255, 230, 235, 1) 0%, rgba(255, 230, 235, 1) 62%, rgba(227, 227, 227, 1) 94%);
+    display: flex;
+    align-items: center;
+    z-index: 50;
+}
+
+.img-logo {
+    background: rgba(255, 230, 235, 1);
+    height: 80px;
+    width: auto;
+    cursor: pointer;
+}
+
+.input-pesquisa {
+    width: 35%;
+    height: 40px;
+    margin-left: 8%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: black 1px solid;
+    border-right: none;
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.input-pesquisa:focus {
+    outline: none;
+}
+
+.button-pesquisa {
+    width: 40px;
+    height: 40px;
+    border: black 1px solid;
+    border-left: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+
+}
+
+.lupa {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    padding: 2px;
+    background-color: white;
+}
+
+.lupa:active {
+    transform: scale(0.9);
+    opacity: 0.8;
+}
+
+.link-header {
+    color: rgb(109, 109, 109);
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 29px;
+    margin-left: 35px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+header a:hover {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 29px;
+    color: rgb(210, 168, 89);
+    transition: 0.3s ease-in-out;
+}
+
+header a:active {
+    transform: scale(0.9);
+}
+
+.button-carrinho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    background: none;
+    border: none;
+    width: 80px;
+    margin-left: 35px;
+    padding: 2px;
+}
+
+.button-carrinho:active {
+    transform: scale(0.9);
+}
+
+.img-carrinho {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.img-carrinho:hover {
+    width: 35px;
+    height: 35px;
+    transition: 0.3s ease-in-out;
+}
+
+.button-login {
+    cursor: pointer;
+    background: none;
+    border: 4px;
+    border-style: ridge;
+    border-radius: 20.5px;
+    border-color: rgb(250, 235, 215);
+    width: 80px;
+    height: 40px;
+    margin-left: 30px;
+    font-weight: 200px;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.button-login:hover {
+    cursor: pointer;
+    background: none;
+    border: 4px;
+    border-style: ridge;
+    border-radius: 20.5px;
+    border-color: rgb(250, 235, 215);
+    width: 85px;
+    height: 45px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    transition: 0.3s ease-in-out;
+    color: rgb(210, 168, 89);
+}
+
+.button-login:active {
+    transform: scale(0.9);
+
+}
+
+.nav-header {
+    margin: 0px 26px 5px 26px;
+    width: calc(100% - 52px);
+    height: 100px;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(227, 227, 227, 1);
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    padding-left: 0%;
+    margin: 0;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0px 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    transition: background 0.3s;
+}
+
+nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgba(227, 227, 227, 1);
+    padding: 0;
+    min-width: 250px;
+    z-index: 1000;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul li {
+    margin: 0px;
+}
+
+nav ul li ul li a {
+    padding: 0px;
+}
+
+nav ul li ul li a:hover {
+    color: rgb(210, 168, 89);
+    background-color: #ffffff;
+}
+
+.navegacao-de-imagens{
+    margin: 0px 26px 0px 26px;
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    position: relative;
+    height: 530px;
+    width: calc(100% - 52px);
+
+}
+
+.buttons-navegacao {
+    position: absolute;
+    bottom: 10px;
+    width: 100px;
+    height: 20px;
+    background-color: rgba(148, 148, 148, 0.13);
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 4px;
+
+}
+
+.button-navegacao{
+    background-color: none;
+    margin-top: 3px;
+    border: none;
+}
+
+.botao-navegacao {
+    border: none;
+    width: 10px;
+    height: 10px;
+    background: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.botao-navegacao:hover {
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 13px;
+    height: 13px;
+    background: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.botao-navegacao:active {
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 13px;
+    height: 13px;
+    background: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    outline: none;
+}
+
+.prudutos-inicias {
+    margin: 0px 26px 10px 26px;
+    display: flex;
+    background-color:rgb(227, 227, 227);
+    justify-content: center;
+    position: relative;
+    height: 540px;
+    width: calc(100% - 52px);
+}
+
+
+.caixa-prudutos-iniciais {
+    width: 300px;
+    height: 530px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    border-bottom-left-radius: 10.5px ;
+    border-bottom-right-radius: 10.5px ;
+}
+
+.produtos {
+    width: 300px;
+    height: 300px;
+}
+.descricao-produtos{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 8px;
+    cursor: pointer;
+}
+.descricao-produtos h2{
+    font-size: 13px;
+    font-weight: 500;
+}
+.descricao-produtos h2:hover{
+    opacity: 0.6;
+    transition: 0.6s;
+}
+.descricao-produtos p{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+.button-produto{
+    width: 300px;
+    height: 55px;
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+    background:  rgb(44, 47, 45);;
+    border: 4px;
+    border-style: ridge;
+    border-radius: 10.5px;
+    border-color: rgb(250, 235, 215);
+    font-weight: 400;
+    font-size: 24px;
+    color: rgb(250, 235, 215);
+    line-height: 29px;
+}
+.button-produto:hover{
+    width: 300px;
+    height: 55px;
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+    background: rgb(12, 119, 0);
+    border: 4px;
+    border-style: ridge;
+    border-radius: 10.5px;
+    border-color: rgb(230, 250, 215);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+}
+.button-produto:active{
+    width: 300px;
+    height: 55px;
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+    background: rgb(12, 119, 0);
+    border: 8px;
+    border-style: ridge;
+    border-radius: 10.5px;
+    border-color: rgb(230, 250, 215);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    transform: scale(0.8);
+}
+
+
+.link-whats img {
+    cursor: pointer;
+    height: 50px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
+}
+
+.link-insta img {
+    cursor: pointer;
+    height: 50px;
+    position: fixed;
+    right: 3px;
+    bottom: 80px;
+}
+
+.fundo img {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+
+
+}
+
+.mascara {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    background: linear-gradient(90deg, rgba(135, 135, 135, 0.201), rgb(210, 168, 89, 0.208) 26%, rgb(210, 168, 89, 0.208)76%, rgba(135, 135, 135, 0.201) 100%);
+}
+
+@media screen and (max-width:900px) {}
