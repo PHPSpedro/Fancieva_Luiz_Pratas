@@ -188,6 +188,17 @@ nav ul li a {
     transition: background 0.3s;
 }
 
+nav ul li a:hover {
+    opacity: 0.7;
+    text-decoration: none;
+    color: rgb(210, 168, 89);
+    padding: 5px 10px;
+    display: block;
+    transition: background 0.3s;
+    transition: 0.6s;
+}
+
+
 nav ul li ul {
     display: none;
     position: absolute;
@@ -216,7 +227,7 @@ nav ul li ul li a:hover {
     background-color: #ffffff;
 }
 
-.navegacao-de-imagens{
+.navegacao-de-imagens {
     margin: 0px 26px 0px 26px;
     display: flex;
     background-color: white;
@@ -241,7 +252,7 @@ nav ul li ul li a:hover {
 
 }
 
-.button-navegacao{
+.button-navegacao {
     background-color: none;
     margin-top: 3px;
     border: none;
@@ -279,7 +290,7 @@ nav ul li ul li a:hover {
 .prudutos-inicias {
     margin: 0px 26px 10px 26px;
     display: flex;
-    background-color:rgb(227, 227, 227);
+    background-color: rgb(227, 227, 227);
     justify-content: center;
     position: relative;
     height: 540px;
@@ -295,46 +306,49 @@ nav ul li ul li a:hover {
     margin-left: 10px;
     margin-right: 10px;
     position: relative;
-    border-bottom-left-radius: 10.5px ;
-    border-bottom-right-radius: 10.5px ;
+    border-bottom-left-radius: 10.5px;
+    border-bottom-right-radius: 10.5px;
 }
 
 .produtos {
     width: 300px;
     height: 300px;
 }
-.descricao-produtos{
-    display:flex;
+
+.descricao-produtos {
+    display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 20px;
     padding: 8px;
     cursor: pointer;
 }
-.descricao-produtos h2{
+
+.descricao-produtos h2 {
     font-size: 13px;
     font-weight: 500;
 }
-.descricao-produtos h2:hover{
+
+.descricao-produtos h2:hover {
     opacity: 0.6;
     transition: 0.6s;
 }
-.descricao-produtos p{
+
+.descricao-produtos p {
     margin-top: 20px;
     font-size: 20px;
     font-weight: 700;
 
 }
 
-.button-produto{
+.button-produto {
     width: 300px;
     height: 55px;
     position: absolute;
     bottom: 0;
     cursor: pointer;
-    background:  rgb(44, 47, 45);;
-    border: 4px;
-    border-style: ridge;
+    background: rgb(44, 47, 45);
+    border: none;
     border-radius: 10.5px;
     border-color: rgb(250, 235, 215);
     font-weight: 400;
@@ -342,38 +356,112 @@ nav ul li ul li a:hover {
     color: rgb(250, 235, 215);
     line-height: 29px;
 }
-.button-produto:hover{
+
+.button-produto:hover {
     width: 300px;
     height: 55px;
     position: absolute;
     bottom: 0;
     cursor: pointer;
     background: rgb(12, 119, 0);
-    border: 4px;
-    border-style: ridge;
+    border: none;
     border-radius: 10.5px;
     border-color: rgb(230, 250, 215);
     font-weight: 500;
     font-size: 24px;
     line-height: 29px;
 }
-.button-produto:active{
+
+.button-produto:active {
     width: 300px;
     height: 55px;
     position: absolute;
     bottom: 0;
     cursor: pointer;
     background: rgb(12, 119, 0);
-    border: 8px;
-    border-style: ridge;
+    border: none;
     border-radius: 10.5px;
     border-color: rgb(230, 250, 215);
     font-weight: 600;
     font-size: 24px;
     line-height: 29px;
-    transform: scale(0.8);
+    transform: scale(0.9);
 }
 
+.quem-somos {
+    margin: 0px 26px 10px 26px;
+    display: flex;
+    background-color: rgba(255, 230, 235, 0.701);
+    justify-content: center;
+    position: relative;
+    height: 540px;
+    width: calc(100% - 52px);
+}
+
+#formulario-cadastro-login {
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(227, 227, 227);
+    position: fixed;
+    top: 100px;
+    left: 77%;
+    padding: 20px;
+    border-radius: 5px;
+    gap: 10px;
+    display: none;
+    z-index: 1;
+}
+#formulario-login{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(227, 227, 227);
+    position: fixed;
+    top: 100px;
+    left: 77%;
+    padding: 20px;
+    border-radius: 5px;
+    gap: 10px;
+    display: none;
+    z-index: 1;
+}
+#formulario-login a{
+    color: red;
+    cursor: pointer;
+}
+
+.input-formularioLogin {
+    width: 280px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px gray solid;
+    padding-left: 5px;
+    outline-color: rgb(210, 168, 89);
+}
+
+#button-login {
+    width: 280px;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+    background: rgb(44, 47, 45);
+    border: none;
+    border-radius: 10.5px;
+    border-color: rgb(250, 235, 215);
+    font-weight: 400;
+    font-size: 24px;
+    color: rgb(250, 235, 215);
+    line-height: 29px;
+}
+.mascara-invisivel{
+    visibility: hidden;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    position: fixed;
+}
 
 .link-whats img {
     cursor: pointer;

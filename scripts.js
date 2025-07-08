@@ -24,3 +24,20 @@ botoes.forEach((botao, i) => {
     document.querySelector(".img-navegacao").src = imagens[indice];
   });
 });
+const formularioLogin = document.querySelector("#formulario-login");
+const tirarFormulario = document.querySelector(".mascara-invisivel")
+const formularioCriarConta = document.querySelector("#formulario-cadastro-login")
+function fazerLogin() {
+  formularioLogin.style.display ="flex"
+  tirarFormulario.style.visibility ="visible"
+}
+function tirarLogin(){
+ formularioLogin.style.display ="none"
+ tirarFormulario.style.visibility ="hidden"
+ formularioCriarConta.style.display="none"
+}
+function criarConta(){
+  formularioCriarConta.style.display = "flex"
+  formularioLogin.style.display="none"
+
+}
