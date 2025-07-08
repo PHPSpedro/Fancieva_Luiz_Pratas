@@ -10,6 +10,8 @@ html,
 body {
     height: auto;
     width: 100vw;
+    scroll-behavior: smooth;
+
 }
 
 header {
@@ -156,6 +158,66 @@ header a:active {
     transform: scale(0.9);
 
 }
+#formulario-cadastro-login {
+    height: 440px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(227, 227, 227);
+    position: fixed;
+    top: 100px;
+    left: 77%;
+    padding: 20px;
+    border-radius: 5px;
+    gap: 10px;
+    display: none;
+    z-index: 1;
+}
+
+#formulario-login {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(227, 227, 227);
+    position: fixed;
+    top: 100px;
+    left: 77%;
+    padding: 20px;
+    border-radius: 5px;
+    gap: 10px;
+    display: none;
+    z-index: 1;
+}
+
+#formulario-login a {
+    color: red;
+    cursor: pointer;
+}
+
+.input-formularioLogin {
+    width: 280px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px gray solid;
+    padding-left: 5px;
+    outline-color: rgb(210, 168, 89);
+}
+
+#button-login {
+    width: 280px;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    cursor: pointer;
+    background: rgb(44, 47, 45);
+    border: none;
+    border-radius: 10.5px;
+    border-color: rgb(250, 235, 215);
+    font-weight: 400;
+    font-size: 24px;
+    color: rgb(250, 235, 215);
+    line-height: 29px;
+}
+
 
 .nav-header {
     margin: 0px 26px 5px 26px;
@@ -349,7 +411,8 @@ nav ul li ul li a:hover {
     cursor: pointer;
     background: rgb(44, 47, 45);
     border: none;
-    border-radius: 10.5px;
+    border-bottom-left-radius: 10.5px;
+    border-bottom-right-radius: 10.5px;
     border-color: rgb(250, 235, 215);
     font-weight: 400;
     font-size: 24px;
@@ -363,9 +426,10 @@ nav ul li ul li a:hover {
     position: absolute;
     bottom: 0;
     cursor: pointer;
-    background: rgb(12, 119, 0);
+    background:rgb(210, 168, 89);
     border: none;
-    border-radius: 10.5px;
+    border-bottom-left-radius: 10.5px;
+    border-bottom-right-radius: 10.5px;
     border-color: rgb(230, 250, 215);
     font-weight: 500;
     font-size: 24px;
@@ -378,7 +442,7 @@ nav ul li ul li a:hover {
     position: absolute;
     bottom: 0;
     cursor: pointer;
-    background: rgb(12, 119, 0);
+    background: rgb(210, 168, 89);
     border: none;
     border-radius: 10.5px;
     border-color: rgb(230, 250, 215);
@@ -392,70 +456,43 @@ nav ul li ul li a:hover {
     margin: 0px 26px 10px 26px;
     display: flex;
     background-color: rgba(255, 230, 235, 0.701);
-    justify-content: center;
     position: relative;
-    height: 540px;
+    height: 640px;
     width: calc(100% - 52px);
 }
-
-#formulario-cadastro-login {
-    height: 440px;
+.quem-somos-texto{
+    width: 50%;
+    padding: 15px;
     display: flex;
     flex-direction: column;
-    background-color:rgb(227, 227, 227);
-    position: fixed;
-    top: 100px;
-    left: 77%;
-    padding: 20px;
-    border-radius: 5px;
     gap: 10px;
-    display: none;
-    z-index: 1;
 }
-#formulario-login{
-    height: 300px;
+.quem-somos-imagem{
+    width: 50%;
+    padding: 30px;
     display: flex;
+    align-content: center;
+    align-items: center;
     flex-direction: column;
-    background-color:rgb(227, 227, 227);
-    position: fixed;
-    top: 100px;
-    left: 77%;
-    padding: 20px;
-    border-radius: 5px;
-    gap: 10px;
-    display: none;
-    z-index: 1;
 }
-#formulario-login a{
-    color: red;
-    cursor: pointer;
+.imagens-quem-somos{
+    width: 80%;
+    height: 100%;
 }
-
-.input-formularioLogin {
-    width: 280px;
-    height: 40px;
-    border-radius: 5px;
-    border: 1px gray solid;
-    padding-left: 5px;
-    outline-color: rgb(210, 168, 89);
+.titulos-quem-somos{
+    color:rgb(210, 168, 89); 
+    font-size: 30px;
+}
+.paragramos-quem-somos{
+    color:rgb(35, 35, 35) ;
+    margin-left: 10px;
+    margin-top: 10px;
+    line-height: 20px;
+    font-size: 15px;
 }
 
-#button-login {
-    width: 280px;
-    height: 40px;
-    position: absolute;
-    bottom: 0;
-    cursor: pointer;
-    background: rgb(44, 47, 45);
-    border: none;
-    border-radius: 10.5px;
-    border-color: rgb(250, 235, 215);
-    font-weight: 400;
-    font-size: 24px;
-    color: rgb(250, 235, 215);
-    line-height: 29px;
-}
-.mascara-invisivel{
+
+.mascara-invisivel {
     visibility: hidden;
     height: 100vh;
     width: 100vw;

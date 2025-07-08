@@ -24,6 +24,8 @@ botoes.forEach((botao, i) => {
     document.querySelector(".img-navegacao").src = imagens[indice];
   });
 });
+
+
 const formularioLogin = document.querySelector("#formulario-login");
 const tirarFormulario = document.querySelector(".mascara-invisivel")
 const formularioCriarConta = document.querySelector("#formulario-cadastro-login")
@@ -41,3 +43,22 @@ function criarConta(){
   formularioLogin.style.display="none"
 
 }
+
+
+const imagensQuemSomos = [
+  "Imagens_HTML/feedbackum.png",
+  "Imagens_HTML/feedbackdois.png",
+  "Imagens_HTML/feedbacktres.png",
+  "Imagens_HTML/feedbackquatro.png",
+  "Imagens_HTML/feedbackcinco.png",
+  "Imagens_HTML/feedbackseis.png"
+];
+let indicedois = 0
+
+function trocarImagemQuemSomos() {
+  indicedois = (indicedois + 1) % imagensQuemSomos.length; // Volta ao início ao chegar no final
+  document.querySelector(".imagens-quem-somos").src = imagensQuemSomos[indicedois];
+}
+
+// Troca a imagem a cada 3 segundos (3000 milissegundos)
+setInterval(trocarImagemQuemSomos, 6000);

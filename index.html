@@ -19,7 +19,7 @@
                 <img src="Imagens_HTML/lupa.png" alt="lupa" class="lupa">
             </button>
             <a class="link-header" href="">FALE CONOSCO</a>
-            <a class="link-header" href="">QUEM SOMOS</a>
+            <a class="link-header" href="#quem-somos">QUEM SOMOS</a>
             <button class="button-carrinho">
                 <img src="Imagens_HTML/carrinho-de-compras.png" alt="carrinho" class="img-carrinho">
             </button>
@@ -95,7 +95,7 @@
             </ul>
         </nav>
 
-        <section class="navegacao-de-imagens" >
+        <section class="navegacao-de-imagens">
             <img src="Imagens_HTML/Anel_Navegação.jpg" alt="anel-navegação" class="img-navegacao">
             <div class="buttons-navegacao">
                 <button class="button-navegacao">
@@ -161,8 +161,45 @@
                 <button class="button-produto">Realizar pedido</button>
             </div>
         </section>
-        <section class="quem-somos">
-            <h1>QUEM SOMOS</h1>
+        <section class="quem-somos" id="quem-somos">
+            <div class="quem-somos-texto">
+                <h1 class="titulos-quem-somos">QUEM SOMOS:</h1>
+                <p class="paragramos-quem-somos">Desde 2020, somos apaixonados por joias que contam histórias. Iniciamos
+                    nossa jornada no Instagram e
+                    WhatsApp,
+                    oferecendo peças em prata 925 com qualidade, estilo e confiança. Com o tempo, percebemos a
+                    necessidade
+                    de facilitar ainda mais a experiência de nossos clientes, por isso, criamos este site, com uma
+                    navegação simples e informações claras para ajudar você a encontrar sua joia ideal.<br>
+
+                    Ainda não realizamos vendas diretamente pelo site, mas estamos trabalhando constantemente em
+                    melhorias e
+                    atualizações para tornar isso possível em breve.</p>
+                <br><br>
+                <h2 class="titulos-quem-somos">Nossa Missão</h2>
+                <p class="paragramos-quem-somos"> É oferecer as melhores peças em prata 925, com design exclusivo e
+                    qualidade garantida. <br>Acreditamos
+                    que
+                    uma joia tem o poder de transformar momentos e eternizar sentimentos, e queremos fazer parte disso
+                    com
+                    você.<br>
+
+                    Com base na confiança e no respeito aos nossos clientes, seguimos firmes em nosso propósito:
+                    entregar
+                    não apenas uma joia, mas uma experiência única.</p>
+                <br><br>
+                <h2 class="titulos-quem-somos">Nosso Diferencial</h2>
+                <p class="paragramos-quem-somos">Nosso compromisso vai além de vender joias: buscamos os melhores
+                    fornecedores para garantir qualidade
+                    com
+                    preço justo, sempre atentos à concorrência de mercado. Trabalhamos com envios rápidos, com prazos de
+                    até
+                    72 horas úteis, garantindo agilidade e segurança para você receber sua peça no menor tempo possível.
+                </p>
+            </div>
+            <div class="quem-somos-imagem">
+                <img src="Imagens_HTML/Foto_sobre_nos.png" alt="fotos-saquinhos" class="imagens-quem-somos">
+            </div>
         </section>
         <div>
             <form id="formulario-cadastro-login">
@@ -190,9 +227,9 @@
                 <label for="senha">Senha:</label>
                 <input type="password" id="senha" class="input-formularioLogin" nome="senha"
                     placeholder="Digite sua senha">
-                    <p>Não tenho conta:</p>
-                    <a onclick="criarConta()">Criar conta</a>
-                <button type="submit" id="button-login">login</button>
+                <p>Não tenho conta:</p>
+                <a onclick="criarConta()">Criar conta</a>
+                <button type="submit" id="button-login">Login</button>
             </form>
             <p id="mensagem"></p>
         </div>
