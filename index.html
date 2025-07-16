@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Franciva Luiz Pratas</title>
+    <link rel="icon" type="image/png" href="Imagens_HTML/logo_title_32x32.jpg">
     <link rel="stylesheet" href="styles.css">
+
 </head>
 
 <body>
@@ -18,13 +20,22 @@
             <button class="button-pesquisa">
                 <img src="Imagens_HTML/lupa.png" alt="lupa" class="lupa">
             </button>
-            <a class="link-header" href="">FALE CONOSCO</a>
+            <a class="link-header" onclick="faleConosco()">FALE CONOSCO</a>
             <a class="link-header" href="#quem-somos">QUEM SOMOS</a>
             <button class="button-carrinho">
                 <img src="Imagens_HTML/carrinho-de-compras.png" alt="carrinho" class="img-carrinho">
+                <span id="contador-carrinho" class="contador-carrinho">0</span>
             </button>
+            <div id="menu-carrinho" class="menu-carrinho oculto">
+                <h3>Seu Carrinho</h3>
+                <ul id="lista-carrinho"></ul>
+                <p id="carrinho-vazio">Seu carrinho está vazio.</p>
+                <p id="total-carrinho">Total: R$ 0,00</p>
+                <button id="botao-finalizar" class="botao-finalizar">Finalizar Compra</button>
+            </div>
             <button class="button-login" onclick="fazerLogin()">Login</button>
         </header>
+
         <nav class="nav-header">
             <ul>
                 <li> <a class="link-header" href="index.html">HOME</a> </li>
@@ -54,34 +65,32 @@
                 <li>
                     <a class="link-header" href="">PULSEIRAS</a>
                     <ul class="sub-menu">
-                        <li><a class="link-header" href="">Brincos com pingente</a></li>
-                        <li><a class="link-header" href="">Brincos de corrente</a></li>
-                        <li><a class="link-header" href="">Brinco de pino</a></li>
-                        <li><a class="link-header" href="">Kit três brincos</a></li>
-                        <li><a class="link-header" href="">Kit seis brincos</a></li>
-                        <li><a class="link-header" href="">Brinco Argola</a></li>
+                        <li><a class="link-header" href="">Pulseiras para Berloc</a></li>
+                        <li><a class="link-header" href="">Bracelet</a></li>
+                        <li><a class="link-header" href="">Bracelet para Berloc</a>
+                        <li>
+                        <li><a class="link-header" href="">Montagem</a></li>
+                        <li><a class="link-header" href="">Fio especia</a></li>
+
                     </ul>
                 </li>
                 <li>
                     <a class="link-header" href="">COLARES</a>
                     <ul class="sub-menu">
-                        <li><a class="link-header" href="">Brincos com pingente</a></li>
-                        <li><a class="link-header" href="">Brincos de corrente</a></li>
-                        <li><a class="link-header" href="">Brinco de pino</a></li>
-                        <li><a class="link-header" href="">Kit três brincos</a></li>
-                        <li><a class="link-header" href="">Kit seis brincos</a></li>
-                        <li><a class="link-header" href="">Brinco Argola</a></li>
+                        <li><a class="link-header" href="">Gargantilha</a></li>
+                        <li><a class="link-header" href="">Signos</a></li>
+                        <li><a class="link-header" href="">Pontos de Luz</a></li>
+                        <li><a class="link-header" href="">Colares mistos</a></li>
+                        <li><a class="link-header" href="">Escapularios</a></li>
+                        <li><a class="link-header" href="">Fio especial</a></li>
                     </ul>
                 </li>
                 <li>
                     <a class="link-header" href="">BERLOQUES</a>
                     <ul class="sub-menu">
-                        <li><a class="link-header" href="">Brincos com pingente</a></li>
-                        <li><a class="link-header" href="">Brincos de corrente</a></li>
-                        <li><a class="link-header" href="">Brinco de pino</a></li>
-                        <li><a class="link-header" href="">Kit três brincos</a></li>
-                        <li><a class="link-header" href="">Kit seis brincos</a></li>
-                        <li><a class="link-header" href="">Brinco Argola</a></li>
+                        <li><a class="link-header" href="">Separadores</a></li>
+                        <li><a class="link-header" href="">Pingentes</a></li>
+                        <li><a class="link-header" href="">Travas de segurança</a></li>
                     </ul>
                 </li>
                 <li>
@@ -131,7 +140,7 @@
                     <br>
                     <p>R$48,00</p>
                 </div>
-                <button class="button-produto">Realizar pedido</button>
+                <button class="button-produto">Adicionar ao carrinho</button>
             </div>
             <div class="caixa-prudutos-iniciais">
                 <img src="Imagens_HTML/produto_dois.jpg" alt="peça-um" class="produtos">
@@ -140,7 +149,7 @@
                     <br>
                     <p>R$48,00</p>
                 </div>
-                <button class="button-produto">Realizar pedido</button>
+                <button class="button-produto">Adicionar ao carrinho</button>
             </div>
             <div class="caixa-prudutos-iniciais">
                 <img src="Imagens_HTML/produto_tres.jpg" alt="peça-um" class="produtos">
@@ -149,7 +158,7 @@
                     <br>
                     <p>R$98,00</p>
                 </div>
-                <button class="button-produto">Realizar pedido</button>
+                <button class="button-produto">Adicionar ao carrinho</button>
             </div>
             <div class="caixa-prudutos-iniciais">
                 <img src="Imagens_HTML/produto_quatro.jpg" alt="peça-um" class="produtos">
@@ -158,7 +167,7 @@
                     <br>
                     <p>R$74,80</p>
                 </div>
-                <button class="button-produto">Realizar pedido</button>
+                <button class="button-produto">Adicionar ao carrinho</button>
             </div>
         </section>
         <section class="quem-somos" id="quem-somos">
@@ -233,6 +242,61 @@
             </form>
             <p id="mensagem"></p>
         </div>
+        <div>
+            <form id="formulario-fale-conosco" action="https://formcarry.com/s/DMK2RUTzs03" method="POST" method="get"
+                enctype="multipart/form-data">
+                <input placeholder="Digite seu nome" class="input-fale-conosco" type="text" name="nome">
+                <input placeholder="Digite seu telefone" class="input-fale-conosco" type="number" name="celular">
+                <textarea placeholder="Digite suas duvidas..." class="text-area-fale-conosco" name="duvidas"></textarea>
+                <button class="button-fale-conosco" type="submit">Enviar e-mail</button>
+            </form>
+        </div>
+        <footer>
+            <div class="caixa-footer">
+                <h3>Atendimentos</h3>
+                <li>
+                    <img src="Imagens_HTML/whatsapp-line.png" alt="img-whats" class="icon-footer">
+                    <a
+                        href="https://wa.me/5511934676492?text=Ol%C3%A1%2C%20gostei%20do%20seu%20cat%C3%A1logo%2C%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es.">(11)93467-6492</a>
+                </li>
+                <li>
+                    <img src="Imagens_HTML/mail-line.png" alt="img-mail" class="icon-footer">
+                    <a href="mailto:pedroprcopio2002@gmail.com">silvafrancieva@gmail.com</a>
+                </li>
+                <li>
+                    <img src="Imagens_HTML/time-line.png" alt="img-time" class="icon-footer">
+                    <a>Segunda à sexta 08h00 às 18h00<br>Atendimento apenas remoto.</a>
+                </li>
+            </div>
+            <div class="caixa-footer">
+                <h3>Ajuda</h3>
+                <li>
+                    <a>Pagamento e Envios</a>
+                </li>
+                <li>
+                    <a>Garantia</a>
+                </li>
+                <li>
+                    <a>Como Comprar</a>
+                </li>
+            </div>
+            <div class="hr">
+                <hr>
+            </div>
+            <div class="caixa-footer">
+                <h3>Meios de envio</h3>
+                <img src="Imagens_HTML/icone-correios.png" alt="icone-correios" class="icon-correios">
+                <h3>Meios de pagamento</h3>
+                <img src="Imagens_HTML/mastercard-fill.png" alt="img-mastercard" class="icon-pagamento">
+                <img src="Imagens_HTML/visa-fill.png" alt="img-visa" class="icon-pagamento">
+                <img src="Imagens_HTML/pix-fill.png" alt="img-pix" class="icon-pagamento">
+            </div>
+            <p id="direitos">© 2025. Todos os direitos reservados. PHPS</p>
+            <img src="Imagens_HTML/logo.png" alt="Logo-footer" class="img-footer">
+            <div class="video-footer-esquerdo">
+                <video src="Imagens_HTML/video_fundo.mp4" autoplay muted loop playsinline></video>
+            </div>
+        </footer>
 
         <div class="mascara-invisivel" onclick="tirarLogin()"></div>
         <div class="fundo">
@@ -248,6 +312,7 @@
         </a>
 
 </body>
+<div id="mensagem-alerta" class="mensagem-alerta oculto"></div>
 <script src="scripts.js"></script>
 
 </html>
